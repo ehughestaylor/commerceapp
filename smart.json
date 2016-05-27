@@ -1,5 +1,4 @@
-{
-  "meteor": {
-    "tag": "v@1.1.10"
-  }
+"meteor": {
+  "git": "https://github.com/meteor/meteor.git",
+  "tag": "v1.1.10"
 }
