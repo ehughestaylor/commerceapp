@@ -1,8 +1,9 @@
 {
-  "scripts": {
-    "reaction": "./reaction",
-    "reaction reset": "./reaction reset",
-    "reaction pull": "./reaction pull",
-    "reaction install": "./reaction install"
+  "name": "",
+  "version": "0.0.1",
+  "private": false,
+  "dependencies": {
+  },
+  "engines": {
   }
 }
