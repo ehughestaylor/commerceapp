@@ -1,0 +1,13 @@
+.style-tips h1, .style-tips h2, .style-tips h3 {
+  color: #000; }
+.style-tips p {
+  font-size: 1.4em; }
+.style-tips a {
+  color: #5D5D5D; }
+.style-tips .content {
+  padding: 0 15px; }
+.style-tips .style-tips-banner {
+  background-image: url("https://res.cloudinary.com/dvzdxf8an/image/upload/v1456090213/style-tips-banner_fgyrfp.jpg");
+  background-position-y: 100%; }
+
+/*# sourceMappingURL=style.css.map */

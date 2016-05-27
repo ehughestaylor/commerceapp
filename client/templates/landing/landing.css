@@ -1,0 +1,50 @@
+#landing .row {
+  min-height: 40vh;
+  text-align: center;
+  line-height: 40vh; }
+#landing .top-row {
+  min-height: 40vh;
+  text-align: center;
+  line-height: 40vh; }
+#landing .banner {
+  border: 5px solid #000; }
+  #landing .banner p {
+    font-size: 4rem;
+    color: white;
+    font-family: gotham;
+    background: rgba(0, 0, 0, 0.2);
+    margin: 0;
+    padding: 0;
+    margin-right: -5px;
+    margin-left: -5px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    text-transform: lowercase;
+    text-shadow: 1px 1px 1px black; }
+  #landing .banner p:hover {
+    transition-duration: 0.3s;
+    background: rgba(0, 0, 0, 0.4); }
+#landing .top-banner {
+  background-image: url("https://res.cloudinary.com/dvzdxf8an/image/upload/v1456845982/skate_k8xyfu.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 28%; }
+#landing .mid-top-right-banner {
+  background-image: url("https://res.cloudinary.com/dvzdxf8an/image/upload/v1456846046/about-media-3_y7hmdz.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+#landing .mid-top-left-banner {
+  background-image: url("https://res.cloudinary.com/dvzdxf8an/image/upload/v1456846261/featured-banner_yieus2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+#landing .mid-bottom-right-banner {
+  background-image: url("https://res.cloudinary.com/dvzdxf8an/image/upload/v1456337531/hjcfbyeyhfn83yyjn9n0.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom; }
+#landing .mid-bottom-left-banner {
+  background-image: url("https://res.cloudinary.com/dvzdxf8an/image/upload/v1456846156/boots_ggp8nt.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+/*# sourceMappingURL=landing.css.map */

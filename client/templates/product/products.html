@@ -1,0 +1,52 @@
+<template name="shop">
+{{!-- Product Templates --}}
+<div class="jumbotron product-page">
+    <div class="text">
+      <h1>MEN DON'T SHOP. THEY HUNT.</h1>
+    </div>
+</div>
+<div class="navbar-header">
+    <button type="button" class="navbar-toggle product-toggle collapsed" data-toggle="collapse" data-target=".product-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</div>
+  <div class="navbar-collapse product-collapse tag-link-list collapse">
+    <!-- {{> headerTags}} -->
+    <ul class="tag-group" style="">
+      <li class="product-list-item"><a class="header-header" href="/product/tag/new"><b>NEW ARRIVALS</b></a></li>
+      <li class="product-list-item"><a class="header-header" href="/product/tag/clothing"><b>CLOTHING</b></a></li>
+      <li class="product-list-item"><a class="product-tag" href="/product/tag/blazers">Blazers</a></li>
+      <li class="product-list-item"><a class="product-tag" href="/product/tag/coats-jackets">Coats & Jackets</a></li>
+      <li class="product-list-item"><a class="product-tag" href="/product/tag/jeans">Jeans</a></li>
+      <li class="product-list-item"><a class="product-tag" href="/product/tag/knitwear">Knitwear</a></li>
+      <li class="product-list-item"><a class="product-tag" href="/product/tag/pants-shorts">Pants & Shorts</a></li>
+      <li class="product-list-item"><a class="product-tag" href="/product/tag/suits">Suits</a></li>
+      <li class="product-list-item"><a class="product-tag" href="/product/tag/shirts">Shirts</a></li>
+      <li class="product-list-item"><a class="header-header" href="/product/tag/shoes"><b>SHOES</b></a></li>
+      <li class="product-list-item"><a class="product-tag" href="/product/tag/boots">Boots</a></li>
+      <li class="product-list-item"><a class="product-tag" href="/product/tag/dress-shoes">Dress Shoes</a></li>
+      <!-- <li class="product-list-item"><a class="product-tag" href="/product/tag/sandals">Sandals</a></li> -->
+      <li class="product-list-item"><a class="product-tag" href="/product/tag/sneakers">Sneakers</a></li>
+      <li class="product-list-item"><a class="header-header" href="/product/tag/accessories"><b>ACCESSORIES</b></a></li>
+      <li class="product-list-item"><a class="product-tag" href="/product/tag/belts">Belts</a></li>
+      <li class="product-list-item"><a class="product-tag" href="/product/tag/cufflinks-tie-clips">Cufflinks & Tie Clips</a></li>
+      <li class="product-list-item"><a class="product-tag" href="/product/tag/hats">Hats</a></li>
+      <!-- <li class="product-list-item"><a class="product-tag" href="/product/tag/jewelry">Jewelry</a></li> -->
+      <li class="product-list-item"><a class="product-tag" href="/product/tag/pocket-squares">Pocket Squares</a></li>
+      <li class="product-list-item"><a class="product-tag" href="/product/tag/scarves">Scarves</a></li>
+      <li class="product-list-item"><a class="product-tag" href="/product/tag/sunglasses">Sunglasses</a></li>
+      <li class="product-list-item"><a class="product-tag" href="/product/tag/ties">Ties</a></li>
+
+
+    </ul>
+  </div>
+
+    {{> productListGrid}}
+
+
+  <!-- footer -->
+  {{>footer}}
+</template>

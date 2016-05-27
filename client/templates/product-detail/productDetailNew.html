@@ -1,0 +1,180 @@
+
+<template name="productDetailNew">
+<div class="container">
+  <div style = "padding:10px 10px; margin-top:6rem" class="container pdp-container">
+    {{!-- Product Visibility Admin Block --}}
+    {{#if isOwner}}
+      <div class="row">
+        {{#if isVisible}}
+          Product management:
+          <a href="#" class="toggle-product-isVisible-link">Make {{#if isVisible}}in{{/if}}visible</a>
+        {{else}}
+          <div class="alert alert-warning">
+            This product is not visible to customers.
+                  You can
+            <a href="#" class="toggle-product-isVisible-link">make it visible</a>
+            when you're done editing.
+          </div>
+        {{/if}}
+      </div>
+
+    {{/if}}
+    {{!-- END Product Visibility Admin Block --}}
+     <!-- Product Detail Page -->
+    <div class="row" itemscope itemtype="http://schema.org/Product">
+
+      <!-- Product Details -->
+      <div class="row">
+        <!-- BEGIN Left Side -->
+        <div class="col-sm-5 pdp-left-column">
+          {{> productImageGallery}}
+
+        </div>
+        <!-- END Left Side -->
+        <!-- BEGIN Right Side -->
+        <div class="col-sm-7 pdp-right-column">
+          <!-- Titles -->
+          <div class="row">
+              <div class="title">
+                <h1 id="title" itemprop="name">{{>fieldComponent field="title" value=title}}</h1>
+              </div>
+              <div class="pageTitle">
+                <h2 id="pageTitle">{{>fieldComponent field="pageTitle" value=pageTitle}}</h2>
+              </div>
+          </div>
+          <div class="row social-pricing">
+            <div class="col-xs-12">
+              {{!-- Price Fixation --}}
+              <span class="price">
+                <i class="fa fa-usd currency-symbol"></i>
+                <span id="price" itemprop="price">{{actualPrice}}
+                  <div class="btn btn-primary add-to-cart-block" id="add-to-cart">
+                    <div class="add-to-cart-quantity pull-left">
+                      <input type="number" class="form-control input-md" name="addToCartQty" id="add-to-cart-quantity" value="1"/>
+                    </div>
+                    <div class="add-to-cart-text">Add to cart</div>
+                  </div>
+                </span>
+              </span>
+
+              <!-- SECTION WHERE YOU LINK TO CLOSET -->
+              <!-- if is admin then you can edit the seller -->
+              <span style="margin-top: 5px;">
+                <!-- <i>Seller</i> -->
+                <a class="edit-user" href="#">{{>fieldComponent field="vendor" value=vendor}}</a>
+                <a class="go-to-user" href="/profile/{{vendor}}">{{>fieldComponent field="vendor" value=vendor}}</a>
+              </span>
+
+              <div style="margin-top: 5px; float:right;" class="btn btn-primary copy-link" id="copyLink">
+                Click if Verifying
+              </div>
+
+            </div>
+            <div class="col-xs-3 col-xs-offset-1">
+              {{!-- Social Commentary --}}
+              <!-- {{#if userHasRole "admin"}}
+              <div class="social-media">
+                <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+                <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+                <a href="#"><i class="fa fa-pinterest fa-lg"> </i></a>
+                <a href="#"><i class="fa fa-instagram fa-lg"></i></a>
+                <div class="social-media-inputs">
+                  {{>fieldComponent field="facebookMsg" value=facebookMsg}}
+                  {{>fieldComponent field="twitterMsg" value=twitterMsg}}
+                  {{>fieldComponent field="pinterestMsg" value=pinterestMsg}}
+                  {{>fieldComponent field="instagramMsg" value=instagramMsg}}
+                </div>
+              </div>
+              {{else}}
+                {{>productSocial}}
+              {{/if}} -->
+            </div>
+          </div>
+          <!-- main product information -->
+          <div class="row col-md-12">
+            {{!-- Description --}}
+            <h4>Info</h4>
+            <div class="row">
+              <span>
+                {{>fieldComponent field="description" value=description type="textarea"}}
+              </span>
+            </div>
+            {{!-- Tags and Details --}}
+            <div class="row" style="border-top:1px solid darkgrey; width:100%;">
+              <h3>Details</h3>
+              {{> metaComponent }}
+              <h3>Tags</h3>
+              {{>tagsComponent tags=tags}}
+            </div>
+            {{!-- Variants & Options --}}
+            <div class="row options-add-to-cart">
+            <h3>Options</h3>
+              {{>variantList}}
+            </div>
+
+            {{!-- Cart Add Block --}}
+            <div class="row">
+              <div class="alert alert-info hidden"></div>
+
+            </div>
+
+          </div>
+          <!-- END Right Side -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{> sellerSection}}
+{{> footer}}
+</template>
+
+
+<template name="sellerSection">
+{{#if subscription}}
+  <!-- <h1>{{sellerEmail}}</h1>
+  <h2>hello world</h2> -->
+<div style="background-color:#EFF0F1" class="wrapper seller-wrapper">
+  <div class="container">
+    <div style="margin: 6rem 0" class="row">
+      <div class="col-xs-6">
+        <div class="row">
+          <div style="text-align:center;" class="col-md-3">
+            <p class="helvet"><b>Seller:</b></p>
+            <br>
+            <img style="height:90px; width:90px; margin-bottom:2rem;" src="{{sellerImage}}" class="img-circle" alt="">
+            <br>
+            <a style="display:block; text-transform:uppercase; font-family:'HelveticaNeue-Bold'" class="btn btn-default helvet" href="/profile/{{sellerEmail}}">Visit</a>
+
+          </div>
+
+          <div class="col-xs-9">
+            <br>
+            <h1 class="helvet">{{sellerName}}</h1>
+            <p>{{sellerAbout}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-6 col-md-6">
+        <p class="helvet"><b>More from {{sellerName}}</b></p>
+        <br>
+        {{#each sellerProducts}}
+        <div class="product">
+          <a class="" href="/product/{{link_id}}">
+            <img style="width: 100px; height: auto;" src="{{this.image}}" class="" alt="">
+            <div class="description">
+              <a class="avatar product-desc"> </a>
+              <!-- <p class="price">${{price}}</p>
+              <p class="condition">{{type}}</p>
+              <p class="title product-desc">{{name}}</p> -->
+              <!-- <p class="id <product></product>-des">id: {{_id}}</p> -->
+            </div>
+          </a>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</div>
+{{/if}}
+</template>

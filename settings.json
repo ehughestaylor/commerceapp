@@ -1,0 +1,20 @@
+{
+"ROOT_URL": "",
+"MONGO_URL": "",
+"MAIL_URL": "",
+"CLOUDINARY_API_SECRET": "HTlHQez0JjOUUY0WRls-yLNYaWY",
+"reaction": {
+"REACTION_USER": "ehughestaylor",
+"REACTION_AUTH": "password1",
+"REACTION_EMAIL": "ehughestaylor@hotmail.com"
+},
+"isDebug": "info",
+"public": {
+"CLOUDINARY_API_KEY": "828492923739642",
+"CLOUDINARY_CLOUD_NAME": "dvzdxf8an",
+"velocity:html-reporter": {
+"position": "top right",
+"tab-index" : 1
+}
+}
+}

@@ -1,0 +1,99 @@
+#userPro{
+  .price, .condition{
+    display: inline-block;
+    margin-bottom: 0;
+  }
+  .price{
+    float: left;
+    font-family: 'HelveticaNeue-Bold';
+
+  }
+  .condition{
+    float: right;
+    font-family: 'EB Garamond';
+    color: darkgrey;
+    font-size: 0.9em;
+  }
+  .product-desc{
+    clear: both;
+  }
+  .product{
+    width: auto;
+    // height: 300px;
+    margin-bottom: 1em;
+    img{
+      height: 200px;
+    }
+  }
+  .inline{
+    display: inline-block;
+  }
+  .user-header-avatar{
+    width: 100px;
+    height: 100px;
+    -webkit-border-radius: 60px;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 60px;
+    -moz-background-clip: padding;
+    border-radius: 60px;
+    background-clip: padding-box;
+    margin: 7px 0 0 5px;
+    // float: left;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+  .verified{
+    color: #25C331;
+    font-size:2.2em;
+    position: absolute;
+    top: 5px;
+    right:10px;
+  }
+  .not-verified{
+    color:#C1332C;
+    font-size:2.2em;
+    position: absolute;
+    top: 5px;
+    right:10px;
+  }
+}
+
+
+
+// MODAL
+
+.modal-content {
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid #999999;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    background-clip: padding-box;
+    outline: 0;
+    border-radius: 0;
+  .modal-header {
+    padding: 20px;
+    border-bottom: none;
+    min-height: 16.42857143px;
+    /* font-family: gotham; */
+    background: #EFF0F1;
+    .modal-title{
+      font-family: gotham;
+      text-align: center;
+      font-size: 3.2em;
+    }
+  }
+}
+
+
+//modal backdrop darkness
+.modal-backdrop.in {
+    opacity: 0.9;
+    filter: alpha(opacity=50);
+    background-image: url('/resources/bwstripes.jpg');
+    background-size: cover;
+}

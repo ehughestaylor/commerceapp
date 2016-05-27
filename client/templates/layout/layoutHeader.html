@@ -1,0 +1,58 @@
+<template name="layoutHeaderNew">
+  <div id="nav-main" class="navbar navbar-default" role="navigation">
+      <div class="navbar-header">
+          <a class="navbar-brand" href="{{pathFor 'home'}}"><img src="/resources/logo-white.png" alt="" /></a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <li class="visible-sm visible-xs mobile-cart"><a href="#">{{> cartIcon}}</a></li>
+      </div>
+      <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+
+              <li class="explore-btn nav-item"><a href="/products">Hunt</a></li>
+
+
+              <li class="nav-item"><a href="/featured-closet">Featured Closet</a></li>
+              <li class="nav-item"><a href="/how-it-works">How It Works</a></li>
+              <li class="nav-item"><a href="/style-guide">Style Science</a></li>
+
+              <!-- <li><a href="/faq">FAQ</a></li> -->
+              <!-- if not a current user then show the sell info page -->
+              {{#unless currentUser}}
+              <li class="nav-item"><a href="{{pathFor 'sell'}}">Start Selling</a></li>
+              {{/unless}}
+              {{#if currentUser}}
+              <li class="profile-button nav-item"><a href="/profile/{{username}}">My Closet</a></li>
+              {{/if}}
+              <li class="">
+                {{#if currentUser}}
+                <form class="navbar-form hidden-xs" role="search">
+                  <div class="input-group user-search">
+                      <textarea class="form-control typeahead" name="username" type="email" role="presentation" placeholder="Search for users..." autocomplete="off" spellcheck="off" data-source="usernames"></textarea>
+                  </div>
+                </form>
+                {{/if}}
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            {{#if currentUser}}
+              <li class="hidden-xs"><a href="#"><img class="nav-image" src="{{profileImage}}" alt=""></a></li>
+
+            {{/if}}
+              <li class="login-dropdown-menu"><a href="#">{{> accounts tpl="loginDropdown"}}</a></li>
+              <li><a href="#">{{> cartIcon}}</a></li>
+
+
+          </ul>
+
+      </div>
+  </div>
+
+<div class="container-fluid">
+  {{>bootstrapAlerts}}
+</div>
+</template>

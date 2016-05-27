@@ -1,0 +1,49 @@
+.how-it{
+  .jumbotron{
+    // height: 50vh;
+    background-position-y: 51%;
+    h1{
+      text-align: center;
+          font-family: gotham;
+          text-shadow: 1px 1px 1px black;
+          margin: 0;
+          // line-height: 44vh;
+    }
+  }
+}
+#works{
+  min-height: 100%;
+  margin-top: 3rem;
+  // .step-one{
+  //   margin-top: -15rem;
+  //   background: #FFF;
+  // }
+  .col-xs-8 {
+    padding-left: 2em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid darkgrey;
+  }
+  .row{
+    padding:0 15px;
+    h1{
+      text-align: left;
+      text-transform: lowercase;
+    }
+    h3{
+      text-align: center;
+      font-family: gotham;
+    }
+    .step-photo{
+      font-size: 7em;
+      margin: 0 auto;
+      display: block;
+      text-align: center;
+    }
+    .col-xs-4{
+      text-align: left;
+    }
+    p{
+      font-size:1.4em;
+    }
+  }
+}

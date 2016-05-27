@@ -1,0 +1,530 @@
+.featured-closet{
+  .social{
+    text-align: center;
+    .col-xs-4{
+      text-align: center;
+      a{
+        text-decoration: none;
+        border-bottom:none;
+        font-size: 3.3em;
+      }
+    }
+  }
+  .featured-banner{
+    // margin-top:-66px;
+    min-height: 100%;
+    min-height: 100vh;
+    .text{
+      position: relative;
+      z-index: 0;
+      text-align: center;
+      color: #fff;
+      // top: 54%;
+      width: 100%;
+      // margin-top: -122px;
+      // left: 0;
+      height: 100vh;
+        h1{
+          // font-size: 5em;
+          color: white;
+          font-family: gotham;
+
+          text-shadow: 1px 2px 1px black;
+          text-transform: uppercase;
+          // font-style: italic;
+          letter-spacing: 4px;
+          margin-top: 35vh;
+        }
+        h2{
+          font-family: gotham;
+          text-shadow: 1px 1px 1px black;
+          // font-style: italic;
+          color: white;
+          text-transform: lowercase;
+        }
+
+    }
+  }
+
+  // Second full height banner
+  .second-banner, .third-banner{
+    // margin-top: 0;
+  }
+  .jumbotron.featured-banner.second-banner {
+    margin-top: 1em;
+
+}
+  // Content layout
+  .content{
+    margin: 7rem 0;
+    h1{
+      // text-align: center;
+      margin: 2rem 0;
+      font-size: 3em;
+
+    }
+    p{
+      font-size: 1.4em;
+    }
+      text-align: left;
+  }
+
+// Gallery for featured-closet
+.media-row{
+  // margin: 7rem 0 0;
+}
+
+
+  .closet-media{
+    border: 4px solid white;
+  }
+  .media-large{
+    // img{
+    //   max-height: 400px;
+    //   margin: 0 auto;
+    // }
+  }
+  .media-small{
+    // img{
+    //   max-height: 400px;
+    //   margin: 0 auto;
+    // }
+  }
+
+
+  // QUESTIONS SECTION
+  .questions{
+    text-align: left;
+    .question{
+      font-family: 'Garamond';
+      margin: 3.5rem 0;
+
+
+    }
+  }
+
+
+  .featured-banner{
+    background-image: url('https://res.cloudinary.com/dvzdxf8an/image/upload/v1456847555/featured-banner-01_hlzltk.jpg');
+  }
+  .second-banner{
+    background-image: url('https://res.cloudinary.com/dvzdxf8an/image/upload/v1456847580/featured-banner-02_dtiemp.jpg');
+  }
+  .third-banner{
+    background-image: url('https://res.cloudinary.com/dvzdxf8an/image/upload/v1456847612/featured-banner-03_uo89uo.jpg');
+  }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait) {
+      //iPhone 6 Portrait
+      .jumbotron{
+        min-height: 50%;
+        min-height: 50vh;
+        .text{
+          position: relative;
+          z-index: 0;
+          text-align: center;
+          color: #fff;
+          // top: 54%;
+          width: 100%;
+          // margin-top: -122px;
+          // left: 0;
+          height: 50vh;
+            h1{
+              // font-size: 5em;
+              color: white;
+              font-family: gotham;
+
+              text-shadow: 1px 2px 1px black;
+              text-transform: uppercase;
+              // font-style: italic;
+              letter-spacing: 4px;
+              margin-top: 20vh;
+            }
+            h2{
+              font-family: gotham;
+              text-shadow: 1px 1px 1px black;
+              // font-style: italic;
+              color: white;
+              text-transform: lowercase;
+            }
+
+        }
+      }
+      .content{
+        margin: 4rem 0;
+        h1{
+          // text-align: center;
+          margin: 2rem 0;
+          font-size: 3em;
+
+        }
+        p{
+          font-size: 1.4em;
+        }
+          text-align: left;
+      }
+      .col-sm-12{
+        padding: 0 15px;
+      }
+      .third-banner{
+        max-height:30vh;
+      }
+  }
+
+
+
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : landscape) {
+      //iPhone 6 landscape
+      .jumbotron{
+        min-height: 50%;
+        min-height: 50vh;
+        .text{
+          position: relative;
+          z-index: 0;
+          text-align: center;
+          color: #fff;
+          // top: 54%;
+          width: 100%;
+          // margin-top: -122px;
+          // left: 0;
+          height: 50vh;
+            h1{
+              // font-size: 5em;
+              color: white;
+              font-family: gotham;
+
+              text-shadow: 1px 2px 1px black;
+              text-transform: uppercase;
+              // font-style: italic;
+              letter-spacing: 4px;
+              margin-top: 20vh;
+            }
+            h2{
+              font-family: gotham;
+              text-shadow: 1px 1px 1px black;
+              // font-style: italic;
+              color: white;
+              text-transform: lowercase;
+            }
+
+        }
+      }
+      .content{
+        margin: 4rem 0;
+        h1{
+          // text-align: center;
+          margin: 2rem 0;
+          font-size: 3em;
+
+        }
+        p{
+          font-size: 1.4em;
+        }
+          text-align: left;
+      }
+      .col-sm-12{
+        padding: 0 15px;
+      }
+      .third-banner{
+        max-height:30vh;
+      }
+  }
+
+
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : portrait) {
+      //iPhone 6+ Portrait
+      .jumbotron{
+        min-height: 50%;
+        min-height: 50vh;
+        .text{
+          position: relative;
+          z-index: 0;
+          text-align: center;
+          color: #fff;
+          // top: 54%;
+          width: 100%;
+          // margin-top: -122px;
+          // left: 0;
+          height: 50vh;
+            h1{
+              // font-size: 5em;
+              color: white;
+              font-family: gotham;
+
+              text-shadow: 1px 2px 1px black;
+              text-transform: uppercase;
+              // font-style: italic;
+              letter-spacing: 4px;
+              margin-top: 20vh;
+            }
+            h2{
+              font-family: gotham;
+              text-shadow: 1px 1px 1px black;
+              // font-style: italic;
+              color: white;
+              text-transform: lowercase;
+            }
+
+        }
+      }
+      .content{
+        margin: 4rem 0;
+        h1{
+          // text-align: center;
+          margin: 2rem 0;
+          font-size: 3em;
+
+        }
+        p{
+          font-size: 1.4em;
+        }
+          text-align: left;
+      }
+      .col-sm-12{
+        padding: 0 15px;
+      }
+      .third-banner{
+        max-height:30vh;
+      }
+  }
+
+
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : landscape) {
+      //iPhone 6+ landscape
+      .jumbotron{
+        min-height: 50%;
+        min-height: 50vh;
+        .text{
+          position: relative;
+          z-index: 0;
+          text-align: center;
+          color: #fff;
+          // top: 54%;
+          width: 100%;
+          // margin-top: -122px;
+          // left: 0;
+          height: 50vh;
+            h1{
+              // font-size: 5em;
+              color: white;
+              font-family: gotham;
+
+              text-shadow: 1px 2px 1px black;
+              text-transform: uppercase;
+              // font-style: italic;
+              letter-spacing: 4px;
+              margin-top: 20vh;
+            }
+            h2{
+              font-family: gotham;
+              text-shadow: 1px 1px 1px black;
+              // font-style: italic;
+              color: white;
+              text-transform: lowercase;
+            }
+
+        }
+      }
+      .content{
+        margin: 4rem 0;
+        h1{
+          // text-align: center;
+          margin: 2rem 0;
+          font-size: 3em;
+
+        }
+        p{
+          font-size: 1.4em;
+        }
+          text-align: left;
+      }
+      .col-sm-12{
+        padding: 0 15px;
+      }
+      .third-banner{
+        max-height:30vh;
+      }
+  }
+
+  @media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-width: 480px){
+      //iPhone 6 and iPhone 6+ portrait and landscape
+      .jumbotron{
+        min-height: 50%;
+        min-height: 50vh;
+        .text{
+          position: relative;
+          z-index: 0;
+          text-align: center;
+          color: #fff;
+          // top: 54%;
+          width: 100%;
+          // margin-top: -122px;
+          // left: 0;
+          height: 50vh;
+            h1{
+              // font-size: 5em;
+              color: white;
+              font-family: gotham;
+
+              text-shadow: 1px 2px 1px black;
+              text-transform: uppercase;
+              // font-style: italic;
+              letter-spacing: 4px;
+              margin-top: 20vh;
+            }
+            h2{
+              font-family: gotham;
+              text-shadow: 1px 1px 1px black;
+              // font-style: italic;
+              color: white;
+              text-transform: lowercase;
+            }
+
+        }
+      }
+      .content{
+        margin: 4rem 0;
+        h1{
+          // text-align: center;
+          margin: 2rem 0;
+          font-size: 3em;
+
+        }
+        p{
+          font-size: 1.4em;
+        }
+          text-align: left;
+      }
+      .col-sm-12{
+        padding: 0 15px;
+      }
+      .third-banner{
+        max-height:30vh;
+      }
+  }
+
+  @media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-width: 480px) and (orientation : portrait){
+      //iPhone 6 and iPhone 6+ portrait
+      .jumbotron{
+        min-height: 50%;
+        min-height: 50vh;
+        .text{
+          position: relative;
+          z-index: 0;
+          text-align: center;
+          color: #fff;
+          // top: 54%;
+          width: 100%;
+          // margin-top: -122px;
+          // left: 0;
+          height: 50vh;
+            h1{
+              // font-size: 5em;
+              color: white;
+              font-family: gotham;
+
+              text-shadow: 1px 2px 1px black;
+              text-transform: uppercase;
+              // font-style: italic;
+              letter-spacing: 4px;
+              margin-top: 20vh;
+            }
+            h2{
+              font-family: gotham;
+              text-shadow: 1px 1px 1px black;
+              // font-style: italic;
+              color: white;
+              text-transform: lowercase;
+            }
+
+        }
+      }
+      .content{
+        margin: 4rem 0;
+        h1{
+          // text-align: center;
+          margin: 2rem 0;
+          font-size: 3em;
+
+        }
+        p{
+          font-size: 1.4em;
+        }
+          text-align: left;
+      }
+      .col-sm-12{
+        padding: 0 15px;
+      }
+      .third-banner{
+        max-height:30vh;
+      }
+
+  }
+
+  @media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-width: 480px) and (orientation : landscape){
+      //iPhone 6 and iPhone 6+ landscape
+      .jumbotron{
+        min-height: 50%;
+        min-height: 50vh;
+        .text{
+          position: relative;
+          z-index: 0;
+          text-align: center;
+          color: #fff;
+          // top: 54%;
+          width: 100%;
+          // margin-top: -122px;
+          // left: 0;
+          height: 50vh;
+            h1{
+              // font-size: 5em;
+              color: white;
+              font-family: gotham;
+
+              text-shadow: 1px 2px 1px black;
+              text-transform: uppercase;
+              // font-style: italic;
+              letter-spacing: 4px;
+              margin-top: 20vh;
+            }
+            h2{
+              font-family: gotham;
+              text-shadow: 1px 1px 1px black;
+              // font-style: italic;
+              color: white;
+              text-transform: lowercase;
+            }
+
+        }
+      }
+      .content{
+        margin: 4rem 0;
+        h1{
+          // text-align: center;
+          margin: 2rem 0;
+          font-size: 3em;
+
+        }
+        p{
+          font-size: 1.4em;
+        }
+          text-align: left;
+      }
+      .col-sm-12{
+        padding: 0 15px;
+      }
+      .third-banner{
+        max-height:30vh;
+      }
+  }
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+  .title-text{
+    font-size: 1.3em;
+  }
+
+}
+
+// backgrounds for banner

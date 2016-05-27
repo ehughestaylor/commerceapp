@@ -1,0 +1,30 @@
+.sell-page .btn-primary {
+  background-color: black;
+  border: none; }
+.sell-page .form-group > a {
+  color: white; }
+.sell-page h1, .sell-page h2 {
+  text-transform: uppercase;
+  text-align: center; }
+.sell-page .loginForm-title {
+  display: none; }
+.sell-page .top-row {
+  padding: 14rem 0;
+  min-height: 50vh;
+  background-image: url("https://res.cloudinary.com/dvzdxf8an/image/upload/v1456847972/wood-2_fqm8t5.jpg");
+  background-size: cover;
+  color: white;
+  min-height: 80%;
+  min-height: 80vh;
+  max-height: 502px; }
+  .sell-page .top-row h2 {
+    color: white; }
+.sell-page .bottom-row {
+  margin-bottom: 5rem; }
+  .sell-page .bottom-row h2 {
+    color: black;
+    margin-top: 2em; }
+  .sell-page .bottom-row .heading-row {
+    height: 16.6666vh; }
+
+/*# sourceMappingURL=sell.css.map */

@@ -1,0 +1,44 @@
+.contact-us h1, .contact-us h2 {
+  color: black; }
+.contact-us .gotham {
+  font-family: gotham; }
+.contact-us .contact-banner {
+  background-image: url("https://res.cloudinary.com/dvzdxf8an/image/upload/v1456847279/contact-banner_ivaejm.jpg");
+  min-height: 100vh;
+  margin: 0;
+  padding: 0; }
+  .contact-us .contact-banner .text {
+    position: relative;
+    z-index: 0;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100vh; }
+    .contact-us .contact-banner .text h1 {
+      font-size: 5em;
+      color: white;
+      font-family: gotham;
+      text-shadow: 1px 1px 1px black;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      margin-top: 20vh; }
+    .contact-us .contact-banner .text h2 {
+      font-family: gotham;
+      text-shadow: 1px 1px 1px black;
+      color: white;
+      text-transform: lowercase;
+      margin-top: 20vh; }
+    .contact-us .contact-banner .text a {
+      color: white;
+      border-bottom: 1px solid white; }
+    .contact-us .contact-banner .text .social {
+      text-align: center; }
+      .contact-us .contact-banner .text .social .col-xs-4 {
+        text-align: center; }
+        .contact-us .contact-banner .text .social .col-xs-4 a {
+          text-decoration: none;
+          border-bottom: none;
+          font-size: 3.3em; }
+
+/*# sourceMappingURL=contact.css.map */

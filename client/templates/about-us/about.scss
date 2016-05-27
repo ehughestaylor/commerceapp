@@ -1,0 +1,135 @@
+.about-us{
+  padding: 0;
+  .team-photos{
+    text-align: center;
+    padding: 0;
+    .employee{
+      list-style-type: none;
+      // display: inline-block;
+      display: block;
+      .employee-img{
+        max-width: 100%;
+        height: 230px;
+        margin: 0 auto;
+      }
+    }
+  }
+  .gotham{
+    font-family: gotham;
+  }
+  .about-banner{
+    background-image: url('https://res.cloudinary.com/dvzdxf8an/image/upload/v1457036844/about-us-banner_revecz.png');
+    background-size: cover;
+    min-height: 80%;
+    min-height: 80vh;
+    .text{
+      position: relative;
+      z-index: 0;
+      text-align: center;
+      color: #fff;
+      // top: 54%;
+      width: 100%;
+      // margin-top: -122px;
+      // left: 0;
+      height: 100vh;
+        h1{
+          // font-size: 5em;
+          color: white;
+          font-family: gotham;
+
+          text-shadow: 1px 1px 1px black;
+          text-transform: uppercase;
+          letter-spacing: 4px;
+          margin-top: 30vh;
+        }
+        h2{
+          font-family: gotham;
+          text-shadow: 1px 1px 1px black;
+          color: white;
+          text-transform: lowercase;
+        }
+
+
+    }
+  }
+
+  // Second full height banner
+  .second-banner, .third-banner{
+    margin-top: 0;
+  }
+  // Content layout
+  .content{
+    padding: 0 15px;
+    margin: 7rem 0;
+    h1{
+      // text-align: center;
+      margin: 2rem 0;
+      font-size: 5em;
+
+    }
+    p{
+      font-size: 1.4em;
+    }
+      text-align: left;
+  }
+
+// Gallery for about
+.media-row{
+  // margin: 7rem 0 0;
+  margin: 0;
+}
+
+
+  .about-media{
+    border: 4px solid white;
+  }
+  .media-large{
+    // img{
+    //   max-height: 400px;
+    //   margin: 0 auto;
+    // }
+  }
+  .media-small{
+    // img{
+    //   max-height: 400px;
+    //   margin: 0 auto;
+    // }
+  }
+
+
+  // QUESTIONS SECTION
+  .questions{
+    text-align: left;
+    .question{
+      font-family: 'Garamond';
+      margin: 3.5rem 0;
+
+
+    }
+  }
+
+
+  // .second-banner{
+  //   background-image: url('https://res.cloudinary.com/dvzdxf8an/image/upload/v1456846413/about-banner-2_wao1va.jpg');
+  // }
+  // .third-banner{
+  //   background-image: url('https://res.cloudinary.com/dvzdxf8an/image/upload/v1456846438/about-banner-3_hzk87t.jpg');
+  //   border-radius: 0!important;
+  //   margin-bottom: 3rem;
+  // }
+}
+
+
+
+// backgrounds for banner
+
+// .featured-banner{
+//   background-image: url('/resources/featured-car.jpg');
+// }
+
+// .small-one{
+//   background-image: url('/resources/about-media-1.jpg');
+// }
+// .small-two{
+//   background-image: url('/resources/about-media-2.jpg');
+// }
